@@ -22,13 +22,21 @@ If you would like to suggest new functionality, open an Issue and mark it as a _
 
 ### Programming languages
 
+Python 3.9
+
 ### Platforms
 
-### Frontend framework
+### Backend framework
+
+Django 3.2
 
 ### Package managers
 
+pip
+
 ### Database technology & provider
+
+PostgreSQL
 
 ## Repos and projects
 
