@@ -64,12 +64,12 @@ All throughout our activity we have been one of the champions of cooperation and
 Find more details on https://www.commitglobal.org/en
 
 
-[ico-contributors]: https://img.shields.io/github/contributors/code4romania/standard-repo-template.svg?style=for-the-badge
-[ico-last-commit]: https://img.shields.io/github/last-commit/code4romania/standard-repo-template.svg?style=for-the-badge
+[ico-contributors]: https://img.shields.io/github/contributors/commitglobal/hiv-support.svg?style=for-the-badge
+[ico-last-commit]: https://img.shields.io/github/last-commit/commitglobal/hiv-support.svg?style=for-the-badge
 [ico-license]: https://img.shields.io/badge/license-MPL%202.0-brightgreen.svg?style=for-the-badge
 
-[link-contributors]: https://github.com/code4romania/standard-repo-template/graphs/contributors
-[link-last-commit]: https://github.com/code4romania/standard-repo-template/commits/main
+[link-contributors]: https://github.com/commitglobal/hiv-support/graphs/contributors
+[link-last-commit]: https://github.com/commitglobal/hiv-support/commits/main
 [link-license]: https://opensource.org/licenses/MPL-2.0
 [link-contributing]: https://github.com/code4romania/.github/blob/main/CONTRIBUTING.md
 
