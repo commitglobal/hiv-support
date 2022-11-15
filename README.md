@@ -8,8 +8,6 @@ HIV Support is a case manager dedicated to support CSOs who receive helprequests
 
 [See the project live][[link-production](https://consilierehiv.ro/ro)]
 
-Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
-
 [Contributing](#contributing) | [Built with](#built-with) | [Repos and projects](#repos-and-projects) | [Deployment](#deployment) | [Feedback](#feedback) | [License](#license) | [About Commit Global](#about-commit-global)
 
 ## Contributing
