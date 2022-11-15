@@ -4,9 +4,9 @@
 [![GitHub last commit][ico-last-commit]][link-last-commit]
 [![License: MPL 2.0][ico-license]][link-license]
 
-Insert bullets description of the project if available.
+HIV Support is a case manager dedicated to support CSOs who receive helprequests from refugees with HIV who seek help to continue treatment and toaccess other services relevant for their condition.
 
-[See the project live][link-production]
+[See the project live][[link-production](https://consilierehiv.ro/ro)]
 
 Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
 
@@ -14,7 +14,7 @@ Give a short introduction of your project. Let this section explain the objectiv
 
 ## Contributing
 
-This project is built by amazing volunteers and you can be one of them! Here's a list of ways in [which you can contribute to this project][link-contributing]. If you want to make any change to this repository, please **make a fork first**.
+This project is built by an amazing team of civic technologists and amazing volunteers and you can be one of them! Here's a list of ways in [which you can contribute to this project][link-contributing]. If you want to make any change to this repository, please **make a fork first**.
 
 Help us out by testing this project in the [staging environment](https://sens-pozitiv.heroesof.tech/). If you see something that doesn't quite work the way you expect it to, open an Issue. Make sure to describe what you _expect to happen_ and _what is actually happening_ in detail.
 
