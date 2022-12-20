@@ -1,4 +1,4 @@
-# Project name
+# HIV Support
 
 [![GitHub contributors][ico-contributors]][link-contributors]
 [![GitHub last commit][ico-last-commit]][link-last-commit]
@@ -6,15 +6,15 @@
 
 HIV Support is a case manager dedicated to support CSOs who receive helprequests from refugees with HIV who seek help to continue treatment and toaccess other services relevant for their condition.
 
-[See the project live][[link-production](https://consilierehiv.ro/ro)]
+[See the project live][link-production]
 
-[Contributing](#contributing) | [Built with](#built-with) | [Repos and projects](#repos-and-projects) | [Deployment](#deployment) | [Feedback](#feedback) | [License](#license) | [About Commit Global](#about-commit-global)
+[Contributing](#contributing) | [Built with](#built-with) | [Deployment](#deployment) | [Feedback](#feedback) | [License](#license) | [About Commit Global](#about-commit-global)
 
 ## Contributing
 
 This project is built by an amazing team of civic technologists and amazing volunteers and you can be one of them! Here's a list of ways in [which you can contribute to this project][link-contributing]. If you want to make any change to this repository, please **make a fork first**.
 
-Help us out by testing this project in the [staging environment](https://sens-pozitiv.heroesof.tech/). If you see something that doesn't quite work the way you expect it to, open an Issue. Make sure to describe what you _expect to happen_ and _what is actually happening_ in detail.
+Help us out by testing this project. If you see something that doesn't quite work the way you expect it to, open an Issue. Make sure to describe what you _expect to happen_ and _what is actually happening_ in detail.
 
 If you would like to suggest new functionality, open an Issue and mark it as a __[Feature request]__. Please be specific about why you think this functionality will be of use. If you can, please include some visual description of what you would like the UI to look like, if you are suggesting new UI elements.
 
@@ -23,9 +23,6 @@ If you would like to suggest new functionality, open an Issue and mark it as a _
 ### Programming languages
 
 Python 3.9
-
-### Platforms
-
 ### Backend framework
 
 Django 3.2
@@ -38,19 +35,34 @@ pip
 
 PostgreSQL
 
-## Repos and projects
-
-Mention all related repos and projects.
-
 ## Deployment
 
-Guide users through getting your code up and running on their own system. In this section you can talk about:
-1. Installation process
-2. Software dependencies
-3. Latest releases
-4. API references
+```sh
+# 1. Clone the repo
+git clone https://github.com/commitglobal/hiv-support.git
 
-Describe and show how to build your code and run the tests.
+# 2. Copy the environment variables file
+cp .env.prod .env
+
+# 3. Build the containers
+docker-compose build
+
+# 4. Start the application
+docker-compose up -d
+```
+
+### Environment variables
+
+The `.env` files contain variables required to start the services and initialize them.
+
+- `ENVIRONMENT` - [`test`|`development`|`production`] sets the type of deployment (default `production`)
+- `RUN_MIGRATION` - [`yes`|`no`] run django migrations when you start the app (default `yes`)
+- `RUN_COMPILEMESSAGES` - [`yes`|`no`] compile i18n messages when you first start the app (default `yes`)
+- `RUN_SEED_DATA` - [`yes`|`no`] load the data from the `fixtures/` folders (default `no`)
+- `RUN_COLLECT_STATIC` - [`yes`|`no`] collects static data like images/fonts (default `yes` - has no effect if `ENVIRONMENT != production`)
+- `RUN_DEV_SERVER` - [`yes`|`no`] starts the app in development mode with a more comprehensive debugging toolbox (default `no`)
+- `DATABASE_URL` - the URL Django will use to connect to the database (should be changed if you're not running through Docker)
+- `SECRET_KEY` - the secret key Django will use to encrypt data (should be changed if you're not running through Docker)
 
 ## Feedback
 
@@ -81,8 +93,4 @@ Find more details on https://www.commitglobal.org/en
 [link-license]: https://opensource.org/licenses/MPL-2.0
 [link-contributing]: https://github.com/code4romania/.github/blob/main/CONTRIBUTING.md
 
-[link-production]: insert_link_here
-[link-staging]: insert_link_here
-
-[link-code4]: https://www.code4.ro/en/
-[link-donate]: https://code4.ro/en/donate/
+[link-production]: https://app.consilierehiv.ro
